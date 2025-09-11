@@ -15,6 +15,7 @@ public class Date4uApplication {
 	public static void main(String[] args) {
 		ApplicationContext ctx = SpringApplication.run(Date4uApplication.class, args);
 
+
 		String[] beanNames = ctx.getBeanDefinitionNames();
 		Arrays.sort(beanNames);
 		Arrays.stream(beanNames).forEach(System.out::println);
